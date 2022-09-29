@@ -20,13 +20,11 @@ const Archive = ({ archive }) => {
 
     const unArchiveNote = (archive) => {
         const updatedNotes = archiveNotes.filter(data => data.id !== archive.id);
-        setAcrchiveNotes(updatedNotes);
         setNotes(prevArr => [archive, ...prevArr]);
     }
 
     const deleteNote = (archive) => {
         const updatedNotes = archiveNotes.filter(data => data.id !== archive.id);
-        setAcrchiveNotes(updatedNotes);
         setDeleteNotes(prevArr => [archive, ...prevArr]);
     }
 
