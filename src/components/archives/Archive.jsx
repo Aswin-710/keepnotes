@@ -16,7 +16,7 @@ const StyledCard = styled(Card)`
 
 const Archive = ({ archive }) => {
 
-    const { archiveNotes, setNotes, setAcrchiveNotes, setDeleteNotes } = useContext(DataContext);
+    const { archiveNotes, setNotes, setDeleteNotes } = useContext(DataContext);
 
     const unArchiveNote = (archive) => {
         const updatedNotes = archiveNotes.filter(data => data.id !== archive.id);
